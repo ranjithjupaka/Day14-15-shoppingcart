@@ -1,6 +1,7 @@
 import React from 'react'
 import { Container,  Dropdown , Nav ,  FormControl,  Navbar, Badge } from 'react-bootstrap'
 import { FaShoppingCart } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
         <Navbar bg="dark" variant="dark" style={{height:80}}>
             <Container>
                 <Navbar.Brand>
-                    <a href='/'>Shopping Cart</a>
+                    <Link to='/'>Shopping Cart</Link>
                 </Navbar.Brand>
                 <Navbar.Text className='search'>
                  <FormControl 
@@ -21,7 +22,7 @@ const Header = () => {
                     <Dropdown alignRight>
                         <Dropdown.Toggle variant="success">
                             <FaShoppingCart color="white" fontSize="25px"/>
-                            <Badge>9</Badge>
+                            <Badge>0</Badge>
                         </Dropdown.Toggle>
                         <Dropdown.Menu style={{minWidth:370}} >
                             <span style={{ padding:10  }}>Cart is Empty!</span>
