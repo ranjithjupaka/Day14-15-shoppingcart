@@ -7,7 +7,7 @@ const Filters = () => {
 
     const {
       productDispatch,
-      productState: { byStock, byFastDelivery, sort, byRating,searchQuery },
+      productState: { byStock, byFastDelivery, sort, byRating },
     } = CartState()
 
     return (
